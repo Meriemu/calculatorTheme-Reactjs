@@ -1,0 +1,30 @@
+// var-custom.scss -- Variables for project
+
+// This map is used for loops (buttons, text-color, bg-color)
+$project-colors: (
+    "primary": var(--primary),
+    "default": var(--gray-900),
+    "brand-2": var(--brand-2),
+    "white": var(--white),
+);
+
+// Font weight
+$fw-light:      300;
+$fw-regular:    400;
+$fw-medium:     500;
+$fw-semiBold:   600;
+$fw-bold:       700;
+$fw-extraBold:  800;
+$fw-black:      900;
+
+$typo-familles-weight: (
+    "light": $fw-light,
+    "regular": $fw-regular,
+    "medium": $fw-medium,
+    "semiBold": $fw-semiBold,
+    "bold": $fw-bold,
+    "extraBold": $fw-extraBold,
+    "black": $fw-black,
+);
+ 
+ 
