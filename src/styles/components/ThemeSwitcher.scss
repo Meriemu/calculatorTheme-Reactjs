@@ -20,9 +20,8 @@
       margin-bottom: 0;
 
       &:last-child {
-         font-size: 2.5rem;
+         font-size: 1.5rem;
          text-transform: uppercase;
-         color: red
       }
    }
 }
@@ -74,7 +73,6 @@
       input[type="radio"] {
          width: 2.3rem;
          height: 2.3rem;
-         background: teal;
          border: 0;
          opacity: 0;
          cursor: pointer;

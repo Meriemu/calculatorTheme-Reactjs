@@ -1,22 +1,12 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import ThemeSwitcher from './ThemeSwitcher';
 import CalculatorResult from './CalculatorResult';
 
-// import { checkboxValueContext } from './ThemeSwitcher'
-
 const Calculator = () => {
-   // const cbValueContext = useContext(checkboxValueContext);
-
-   // console.log("cbValueContext: ", cbValueContext);
    const [childToParent, setChildToParent] = useState(2);
    const handleCallback = (childData) =>{
       setChildToParent(childData)
-      console.log("childData :;", handleCallback)
   }
-
-  useEffect(() => {
-   // handleCallback()
-  }, []);
    const inputRef= useRef();
 
    const btnValues = [
@@ -25,7 +15,7 @@ const Calculator = () => {
       [1, 2, 3, "-"],
       [".", 0, "/", "*"],
       ["reset", "="]
-    ];
+   ];
 
    const [num, setNum] = useState("");
    const clickHandler = event => {
@@ -36,7 +26,6 @@ const Calculator = () => {
 
    const calculate =(e)=> {
       e.preventDefault();
-      // console.log("x : ", num )
       setNum(eval(num))
    }
 
@@ -45,8 +34,13 @@ const Calculator = () => {
       setNum("")
    }
   return (
-      <div className='calculator__wrapper th2' style={{
-         colorScheme: childToParent=== 1 ? "th1" : childToParent === 2 ? "th2" : childToParent === 2 ? "th3" : ''
+      <div className={
+         'calculator__wrapper '  +
+         ( childToParent=== 1 ? "th1" 
+         : childToParent === 2 ? "th2" 
+         : childToParent === 3 ? "th3" 
+         : '')} style={{
+         colorScheme: childToParent=== 1 ? "th1" : childToParent === 2 ? "th2" : childToParent === 3 ? "th3" : ''
          }}>
          <div className='calculator__container'>
             <ThemeSwitcher parentCallback={handleCallback} />

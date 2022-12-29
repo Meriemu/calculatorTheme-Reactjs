@@ -1,7 +1,7 @@
 // var-custom.scss -- Variables for project
 
 // Calculator Theme
-.theme1 {
+.th1 {
   // #### Backgrounds
   --bg-main-screen: hsl(222, 26%, 31%);
   --bg-toggle-screen: hsl(223, 31%, 20%);
@@ -20,8 +20,11 @@
   // #### Text
   --txt-color-1: hsl(221, 14%, 31%);
   --txt-color-2: hsl(0, 0%, 100%);
+  --txt-equal: hsl(0, 0%, 100%);
+  --txt-white: hsl(0, 0%, 100%);
+  --txt-btn:  hsl(221, 14%, 31%);
 }
-.theme2 {
+.th2 {
   // #### Backgrounds
   --bg-main-screen: hsl(0, 0%, 90%);
   --bg-toggle-screen: hsl(0, 5%, 81%);
@@ -38,14 +41,17 @@
   --key-shadow--2: hsl(35, 11%, 61%);
 
   // #### Text
-  --txt-color-1: hsl(60, 10%, 19%);
-  --txt-color-2: hsl(0, 0%, 100%);
+  --txt-color-2: hsl(60, 10%, 19%);
+  --txt-color-1: hsl(0, 0%, 100%);
+  --txt-equal: hsl(0, 0%, 100%);
+  --txt-white: hsl(0, 0%, 100%);
+  --txt-btn:  hsl(221, 14%, 31%);
 }
-.theme3 {
+.th3 {
   // #### Backgrounds
   --bg-main-screen: hsl(268, 75%, 9%);
+  --bg-screen: hsl(268, 71%, 12%);
   --bg-toggle-screen: hsl(268, 71%, 12%);
-  // --bg-screen: hsl(0, 0%, 93%);
 
   // #### Keys
   --key-bg--1: hsl(281, 89%, 26%);
@@ -58,9 +64,11 @@
   --key-shadow--2: hsl(290, 70%, 36%);
 
   // #### Text
-  --txt-color-1: hsl(52, 100%, 62%);
-  --txt-color-2: hsl(198, 20%, 13%);
-  --txt-color-3: hsl(0, 0%, 100%);
+  --txt-color-2: hsl(52, 100%, 62%);
+  --txt-color-1: hsl(198, 20%, 13%);
+  --txt-equal: hsl(198, 20%, 13%);
+  --txt-white: hsl(0, 0%, 100%);
+  --txt-btn: hsl(52, 100%, 62%);
 }
 
 // Font weight

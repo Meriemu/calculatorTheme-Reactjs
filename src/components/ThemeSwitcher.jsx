@@ -1,23 +1,16 @@
-import React, { createContext, useState, useEffect, useRef } from 'react';
-
-// export const checkboxValueContext = createContext();
+import React, { useState, useEffect } from 'react';
 
 export const ThemeSwitcher = ({parentCallback}) => {
   const [isRadio, setisRadio] = useState(2);
-  const [cbTheme, setCbTheme] = useState({});
-// console.log(myFunc)
+  
   const handleRadio= (event) => {
-    // console.log("isradio", isRadio)
     setisRadio(+event.currentTarget.value);
     parentCallback(isRadio)
-    // console.log(event.currentTarget.value);
   }
 
   useEffect(() => {
-    // handleRadio(event)
-    console.log("first")
-    // console.table("isradio", isRadio)
-  }, []);
+      parentCallback(isRadio);
+  }, [isRadio]);
   return (
     <div>
       <div className='calculatorSwitcher__wrapper'>

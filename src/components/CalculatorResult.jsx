@@ -1,7 +1,6 @@
 import React from 'react'
 
 const CalculatorResult = ({ num, inputRef, setNum }) => {
-  // console.log("first", showNb)
   return (
     <input onChange={event=> setNum(event.target.value)} 
       className='calculatorResult__container' 
