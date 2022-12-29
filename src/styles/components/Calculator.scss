@@ -6,38 +6,65 @@
    justify-content: center;
    align-items: center;
    margin: auto;
-}
-.calculatorNB__container {
-   display: flex;
-   align-content: center;
-   justify-content: center;
-   flex-direction: column;
-   margin-top: 2rem;
-   padding: 2rem;
-   width: 30rem;
+   background-color: var(--bg-main-screen);
+   height: 100vh;
 }
 
-.calculatorNB__row {
+.calculator__container {
+   // position:relative;
+   margin-top: 2rem;
+   // padding: 2rem;
+   width: 55rem;
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    justify-content: center;
-   flex-wrap: wrap;
    // width: 15rem;
 
    button {
-      background-color: teal;
+      background-color: var(--key-bg--2);
+      box-shadow: 0px 5px 0px var(--key-shadow--2);
       border: none;
       border-radius: .8rem;
-      color: #FFF;
-      width: 6rem;
-      height: 4rem;
-      margin: 1rem;
-      flex:1 1 calc(100% / 4);
+      color: var(--txt-color-1);
+      height: 6rem;
+      margin: 1.5rem;
+      flex: 1 1 9rem;
+      font-size: 4rem;
+      text-transform: uppercase;
 
+
+         &.btn-del-reset {
+            background-color: var(--key-bg--1);
+            box-shadow:  0px 5px 0px var(--key-shadow--1);
+            color: var(--txt-color-2);
+            font-size: 3rem;
+         }
+
+         &.btn-Equals {
+            background-color: var(--key-bg--toggle);
+            box-shadow:  0px 5px 0px var(--key-shadow-toggle--1);
+            color: var(--txt-color-2);
+         }
       &:hover {
          background-color: #FFF;
          color: teal;
          border: 1px solid teal;
       }
    }
+
+   input[type="text"] {
+      background-color: var(--bg-toggle-screen);  
+   }
+}
+
+.calculatorNB__container {
+   display: flex;
+   align-content: center;
+   justify-content: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+   background-color: var(--bg-toggle-screen);
+   margin-top: 2rem;
+   padding: 1rem;
+   border-radius: 1rem;
 }

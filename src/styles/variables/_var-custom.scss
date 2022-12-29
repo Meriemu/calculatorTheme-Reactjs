@@ -1,30 +1,83 @@
 // var-custom.scss -- Variables for project
 
-// This map is used for loops (buttons, text-color, bg-color)
-$project-colors: (
-    "primary": var(--primary),
-    "default": var(--gray-900),
-    "brand-2": var(--brand-2),
-    "white": var(--white),
-);
+// Calculator Theme
+.theme1 {
+  // #### Backgrounds
+  --bg-main-screen: hsl(222, 26%, 31%);
+  --bg-toggle-screen: hsl(223, 31%, 20%);
+  --bg-screen: hsl(224, 36%, 15%);
+
+  // #### Keys
+  --key-bg--1: hsl(225, 21%, 49%);
+  --key-shadow--1: hsl(224, 28%, 35%);
+
+  --key-bg--toggle: hsl(6, 63%, 50%);
+  --key-shadow-toggle--1: hsl(6, 70%, 34%);
+
+  --key-bg--2: hsl(30, 25%, 89%);
+  --key-shadow--2: hsl(28, 16%, 65%);
+
+  // #### Text
+  --txt-color-1: hsl(221, 14%, 31%);
+  --txt-color-2: hsl(0, 0%, 100%);
+}
+.theme2 {
+  // #### Backgrounds
+  --bg-main-screen: hsl(0, 0%, 90%);
+  --bg-toggle-screen: hsl(0, 5%, 81%);
+  --bg-screen: hsl(0, 0%, 93%);
+
+  // #### Keys
+  --key-bg--1: hsl(185, 42%, 37%);
+  --key-shadow--1: hsl(185, 58%, 25%);
+
+  --key-bg--toggle: hsl(25, 98%, 40%);
+  --key-shadow-toggle--1: hsl(25, 99%, 27%);
+
+  --key-bg--2: hsl(45, 7%, 89%);
+  --key-shadow--2: hsl(35, 11%, 61%);
+
+  // #### Text
+  --txt-color-1: hsl(60, 10%, 19%);
+  --txt-color-2: hsl(0, 0%, 100%);
+}
+.theme3 {
+  // #### Backgrounds
+  --bg-main-screen: hsl(268, 75%, 9%);
+  --bg-toggle-screen: hsl(268, 71%, 12%);
+  // --bg-screen: hsl(0, 0%, 93%);
+
+  // #### Keys
+  --key-bg--1: hsl(281, 89%, 26%);
+  --key-shadow--1: hsl(285, 91%, 52%);
+
+  --key-bg--toggle: hsl(176, 100%, 44%);
+  --key-shadow-toggle--1: hsl(177, 92%, 70%);
+
+  --key-bg--2: hsl(268, 47%, 21%);
+  --key-shadow--2: hsl(290, 70%, 36%);
+
+  // #### Text
+  --txt-color-1: hsl(52, 100%, 62%);
+  --txt-color-2: hsl(198, 20%, 13%);
+  --txt-color-3: hsl(0, 0%, 100%);
+}
 
 // Font weight
-$fw-light:      300;
-$fw-regular:    400;
-$fw-medium:     500;
-$fw-semiBold:   600;
-$fw-bold:       700;
-$fw-extraBold:  800;
-$fw-black:      900;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semiBold: 600;
+$fw-bold: 700;
+$fw-extraBold: 800;
+$fw-black: 900;
 
 $typo-familles-weight: (
-    "light": $fw-light,
-    "regular": $fw-regular,
-    "medium": $fw-medium,
-    "semiBold": $fw-semiBold,
-    "bold": $fw-bold,
-    "extraBold": $fw-extraBold,
-    "black": $fw-black,
+  "light": $fw-light,
+  "regular": $fw-regular,
+  "medium": $fw-medium,
+  "semiBold": $fw-semiBold,
+  "bold": $fw-bold,
+  "extraBold": $fw-extraBold,
+  "black": $fw-black,
 );
- 
- 

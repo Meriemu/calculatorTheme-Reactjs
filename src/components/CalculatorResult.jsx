@@ -1,11 +1,12 @@
 import React from 'react'
 
-const CalculatorResult = ({ showNb }) => {
+const CalculatorResult = ({ num, inputRef, setNum }) => {
   // console.log("first", showNb)
   return (
-    <div className='calculatorResult__container'>
-      {showNb}
-    </div>
+    <input onChange={event=> setNum(event.target.value)} 
+      className='calculatorResult__container' 
+      value={num} 
+      ref={inputRef} />
   )
 }
 

@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
 *,
 *::after,
 *::before {
     box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body {
@@ -10,8 +15,8 @@ body {
     overflow-x: hidden;
     color: var(--body-color);
     // background-color: green!important;
-    font-size: 1.2rem;
-    font-family: 'Roboto Condensed';;
+    font-size: 3.2rem;
+    font-family: 'League Spartan', sans-serif;
     
     @include media-breakpoint-down(md) {
         &.nav-is-open {

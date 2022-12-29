@@ -1,0 +1,95 @@
+.calculatorSwitcher__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.calculatorSwitcher__text {
+   display: flex;
+   margin-bottom: 0;
+   color: var(--txt-color-2);
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   margin-right: 2rem;
+
+   p {
+      margin-bottom: 0;
+
+      &:last-child {
+         font-size: 2.5rem;
+         text-transform: uppercase;
+         color: red
+      }
+   }
+}
+.calculatorSwitcher {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+   background-color: var(--bg-toggle-screen);
+   border-radius: 4rem;
+   // width: 10rem;
+   height: 1.5rem;
+   padding: 1.2rem 0;
+
+   fieldset {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      &:before {
+         content: '1 2 3';
+         display: flex;
+         justify-content: center;
+         position: absolute;
+         top: -3rem;
+         width: 8rem;
+         color: var(--txt-color-2);
+         letter-spacing: 0.6rem;
+         font-size: 1.5rem;
+      }
+
+      label {
+         color: #fff;
+         font-size: 2rem;
+         position: absolute;
+         left: .5rem;
+         background-color: var(--key-bg--toggle);
+         width: 1.5rem;
+         height: 1.5rem;
+         border-radius: 50%;
+         transition: transform .5s;
+         transform: translate(0, -50%);
+         top: 50%;
+
+         &.checklabel {
+            transform: translate(23px, -50%);
+         }
+      }
+      input[type="radio"] {
+         width: 2.3rem;
+         height: 2.3rem;
+         background: teal;
+         border: 0;
+         opacity: 0;
+         cursor: pointer;
+
+         &.cb-th1:checked ~ label {
+            transform: translate(0, -50%);
+         }
+         &.cb-th2:checked ~ label {
+            // transform: translate(23px, -50%);
+         }
+         &.cb-th3:checked  ~ label {
+            transform: translate(45px, -50%);
+         }
+      }
+
+
+   }
+}
