@@ -6,7 +6,7 @@ const Calculator = () => {
    const [childToParent, setChildToParent] = useState(2);
    const handleCallback = (childData) =>{
       setChildToParent(childData)
-  }
+   }
    const inputRef= useRef();
 
    const btnValues = [
@@ -44,7 +44,6 @@ const Calculator = () => {
          }}>
          <div className='calculator__container'>
             <ThemeSwitcher parentCallback={handleCallback} />
-               <p style={{color: 'red'}}>Parent: {childToParent}</p> 
                <form onSubmit={calculate}> 
                   <CalculatorResult  num={num} inputRef={inputRef} setNum={setNum} />
                      <div className='calculatorNB__container'>

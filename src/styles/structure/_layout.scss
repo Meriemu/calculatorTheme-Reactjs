@@ -14,27 +14,10 @@ body {
     position: relative;
     overflow-x: hidden;
     color: var(--body-color);
-    // background-color: green!important;
     font-size: 3.2rem;
     font-family: 'League Spartan', sans-serif;
-    
-    @include media-breakpoint-down(md) {
-        &.nav-is-open {
-            overflow: hidden;
-        }
-    }
 }
  
 p:empty {
     display: none;
 }
- 
-
-.container-content {
-    // max-width: 122rem + $grid-gutter-width;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: $grid-gutter-width/2;
-    padding-right: $grid-gutter-width/2;
-}
- 

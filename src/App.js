@@ -5,7 +5,7 @@ import './styles/style.scss';
 function App() {
   return (
     <div className="App theme1">
-    <Calculator  />
+      <Calculator  />
     </div>
   );
 }

@@ -12,10 +12,14 @@
   --key-shadow--1: hsl(224, 28%, 35%);
 
   --key-bg--toggle: hsl(6, 63%, 50%);
-  --key-shadow-toggle--1: hsl(6, 70%, 34%);
+  --key-bg--toggle-hover: hsl(25, 98%, 40%);
 
   --key-bg--2: hsl(30, 25%, 89%);
   --key-shadow--2: hsl(28, 16%, 65%);
+  --key--hover: hsl(0, 0%, 100%);
+  --key--delReset--hover: hsl(222, 51%, 75%);
+  --key-equal-shadow-toggle--1: hsl(6, 70%, 34%);
+  --key--equal--hover: hsl(6, 95%, 67%);
 
   // #### Text
   --txt-color-1: hsl(221, 14%, 31%);
@@ -34,11 +38,15 @@
   --key-bg--1: hsl(185, 42%, 37%);
   --key-shadow--1: hsl(185, 58%, 25%);
 
-  --key-bg--toggle: hsl(25, 98%, 40%);
-  --key-shadow-toggle--1: hsl(25, 99%, 27%);
+  --key-bg--toggle: hsl(6, 63%, 50%);
+  --key-bg--toggle-hover: hsl(24, 100%, 61%);
 
   --key-bg--2: hsl(45, 7%, 89%);
   --key-shadow--2: hsl(35, 11%, 61%);
+  --key--hover: hsl(0, 0%, 100%);
+  --key--delReset--hover: hsl(187, 41%, 56%);
+  --key-equal-shadow-toggle--1: hsl(6, 70%, 34%);
+  --key--equal--hover: var(--key-bg--toggle-hover);
 
   // #### Text
   --txt-color-2: hsl(60, 10%, 19%);
@@ -58,10 +66,14 @@
   --key-shadow--1: hsl(285, 91%, 52%);
 
   --key-bg--toggle: hsl(176, 100%, 44%);
-  --key-shadow-toggle--1: hsl(177, 92%, 70%);
+  --key-bg--toggle-hover: hsl(177, 92%, 70%);
 
   --key-bg--2: hsl(268, 47%, 21%);
   --key-shadow--2: hsl(290, 70%, 36%);
+  --key--hover: hsl(265, 49%, 45%);
+  --key--delReset--hover: hsl(279, 52%, 45%);
+  --key-equal-shadow-toggle--1: hsl(177, 92%, 70%);
+  --key--equal--hover: hsl(177, 100%, 78%);
 
   // #### Text
   --txt-color-2: hsl(52, 100%, 62%);

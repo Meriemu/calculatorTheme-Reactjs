@@ -32,7 +32,6 @@
   align-items: center;
    background-color: var(--bg-toggle-screen);
    border-radius: 4rem;
-   // width: 10rem;
    height: 1.5rem;
    padding: 1.2rem 0;
 
@@ -40,6 +39,7 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
+         cursor: pointer;
 
       &:before {
          content: '1 2 3';
@@ -58,16 +58,16 @@
          font-size: 2rem;
          position: absolute;
          left: .5rem;
+         top: 50%;
          background-color: var(--key-bg--toggle);
          width: 1.5rem;
          height: 1.5rem;
          border-radius: 50%;
          transition: transform .5s;
-         transform: translate(0, -50%);
-         top: 50%;
+         cursor: pointer;
 
-         &.checklabel {
-            transform: translate(23px, -50%);
+         &:hover {
+            background-color: var(--key-bg--toggle-hover);
          }
       }
       input[type="radio"] {
@@ -75,19 +75,16 @@
          height: 2.3rem;
          border: 0;
          opacity: 0;
-         cursor: pointer;
 
          &.cb-th1:checked ~ label {
             transform: translate(0, -50%);
          }
          &.cb-th2:checked ~ label {
-            // transform: translate(23px, -50%);
+            transform: translate(23px, -50%);
          }
          &.cb-th3:checked  ~ label {
             transform: translate(45px, -50%);
          }
       }
-
-
    }
 }
