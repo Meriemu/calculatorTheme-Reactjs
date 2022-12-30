@@ -33,6 +33,12 @@ const Calculator = () => {
       e.preventDefault();
       setNum("")
    }
+   const handleDelete =(e)=> {
+      e.preventDefault();
+      const lastChar = num.toString().at(-1);
+      const lasCharDeleted = num.toString().replace(lastChar, '');
+      setNum(lasCharDeleted);
+   }
   return (
       <div className={
          'calculator__wrapper '  +
@@ -50,12 +56,19 @@ const Calculator = () => {
                      {
                         btnValues.flat().map((btn, i)=> {
                            return ( 
-                              <button className={ btn==="del" || btn==="reset" ? 'btn-del-reset' : btn==="=" ? "btn-Equals": null } 
+                              <button className={ btn==="del" 
+                              || btn==="reset" ?
+                               'btn-del-reset' 
+                               : btn==="=" ?
+                               "btn-Equals"
+                               : btn ==='*' ? 'btn-multip'
+                               : null } 
                                        type='button' key={i} 
                               value={btn}
                               onClick={()=>{
                                  btn ==="=" ? calculate(event) 
-                                 : btn ==="del" ? resetCalc(event)
+                                 : btn ==="reset" ? resetCalc(event)
+                                 : btn ==="del" ? handleDelete(event)
                                  :  clickHandler(event)
                               }}> { btn }</button>)
                         })
