@@ -104,7 +104,7 @@ const Calculator = () => {
                </form>
            <div className='codedBy'> 
             <p id='anim-fade'>Frontend Mentor Challenge<br /> Coded by </p>
-            <p className='codedBy__name' id='anim-fade__name'><br />Meryem.A</p>
+            <p className='codedBy__name' id='anim-fade__name'><br />Meryem A.</p>
             </div>
          </div>
       </div>
