@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 export const ThemeSwitcher = ({parentCallback}) => {
-  const [isRadio, setisRadio] = useState(2);
+  const [isRadio, setisRadio] = useState(1);
   
   const handleRadio= (event) => {
     setisRadio(+event.currentTarget.value);

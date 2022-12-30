@@ -3,7 +3,7 @@ import ThemeSwitcher from './ThemeSwitcher';
 import CalculatorResult from './CalculatorResult';
 
 const Calculator = () => {
-   const [childToParent, setChildToParent] = useState(2);
+   const [childToParent, setChildToParent] = useState(1);
    const handleCallback = (childData) =>{
       setChildToParent(childData)
    }

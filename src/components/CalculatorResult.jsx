@@ -6,6 +6,7 @@ const CalculatorResult = ({ num, inputRef, setNum }) => {
       className='calculatorResult__container' 
       value={num} 
       ref={inputRef}
+      placeholder="0"
       disabled />
   )
 }
