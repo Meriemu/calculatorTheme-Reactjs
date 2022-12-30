@@ -21,7 +21,7 @@ const Calculator = () => {
    const clickHandler = event => {
       // When user click on Button Focus go to the Input display
       inputRef.current.focus();
-      setNum(prevState => prevState + event.target.value)
+      setNum(prevState => prevState + event.target.value);
    }  
 
    const calculate =(e)=> {
@@ -39,6 +39,33 @@ const Calculator = () => {
       const lasCharDeleted = num.toString().replace(lastChar, '');
       setNum(lasCharDeleted);
    }
+  
+   // Coded by animation
+   function fadeAnim(){
+      var wrapper = document.getElementById("anim-fade");
+      wrapper.style.opacity="1";
+      wrapper.innerHTML = wrapper.textContent.replace(/./g,"<span>$&</span>");
+
+      var spans = wrapper.getElementsByTagName("span");
+
+      for(var i=0;i<spans.length;i++){
+         spans[i].style.animationDelay = i*80+"ms";
+      } 
+   }
+   function fadeAnim__name(){
+      var wrapper__name = document.getElementById("anim-fade__name");
+      wrapper__name.style.opacity="1";
+      wrapper__name.innerHTML = wrapper__name.textContent.replace(/./g,"<span>$&</span>");
+
+      var spans = wrapper__name.getElementsByTagName("span");
+
+      for(var i=0;i<spans.length;i++){
+         spans[i].style.animationDelay = i*80+"ms";
+      } 
+   }
+   setTimeout(fadeAnim, 2000);
+   setTimeout(fadeAnim__name, 5200);
+   
   return (
       <div className={
          'calculator__wrapper '  +
@@ -75,6 +102,10 @@ const Calculator = () => {
                      } 
                   </div>
                </form>
+           <div className='codedBy'> 
+            <p id='anim-fade'>Frontend Mentor Challenge<br /> Coded by </p>
+            <p className='codedBy__name' id='anim-fade__name'><br />Meryem.A</p>
+            </div>
          </div>
       </div>
   )

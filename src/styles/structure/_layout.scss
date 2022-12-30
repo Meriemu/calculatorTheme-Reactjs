@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=League+Spartan:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Passions+Conflict&display=swap');
 
 *,
 *::after,
@@ -21,3 +22,51 @@ body {
 p:empty {
     display: none;
 }
+.codedBy {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--txt-color-2);
+    line-height: 2.5rem;
+    margin-top: 1rem;
+
+    .codedBy__name {
+        // font-family: 'Dancing Script', cursive;
+        font-family: 'Passions Conflict', cursive;
+        font-size: 5rem;
+    }
+
+}
+
+#anim-fade, #anim-fade__name {
+    opacity: 0;
+
+    span {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    color: var(--black, $black);
+    opacity: 0;
+    animation: fade 200ms ease-in-out forwards;
+    }
+
+    @keyframes fade {
+    0% {
+        top: 10px;
+        left: 10px;
+        filter: blur(15px);
+        opacity: 0;
+    }
+    50% {
+        filter: blur(10px);
+        opacity: 0.9;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        filter: blur(0px);
+        opacity: 1;
+    }
+    }
+}
+
+  

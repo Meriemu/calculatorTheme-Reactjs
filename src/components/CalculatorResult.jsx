@@ -5,7 +5,8 @@ const CalculatorResult = ({ num, inputRef, setNum }) => {
     <input onChange={event=> setNum(event.target.value)} 
       className='calculatorResult__container' 
       value={num} 
-      ref={inputRef} />
+      ref={inputRef}
+      disabled />
   )
 }
 
