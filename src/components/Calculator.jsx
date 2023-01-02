@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import ThemeSwitcher from './ThemeSwitcher';
 import CalculatorResult from './CalculatorResult';
 
@@ -63,8 +63,10 @@ const Calculator = () => {
          spans[i].style.animationDelay = i*80+"ms";
       } 
    }
-   setTimeout(fadeAnim, 2000);
-   setTimeout(fadeAnim__name, 5200);
+   useEffect(() => {    
+      setTimeout(fadeAnim, 2000);
+      setTimeout(fadeAnim__name, 5200);
+   }, []);
    
   return (
       <div className={
